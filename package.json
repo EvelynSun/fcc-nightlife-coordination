@@ -5,10 +5,8 @@
   "main": "server.js",
   "repository": "",
   "author": "Mostafa Eweda <mo.eweda@gmail.com>",
-  
   "scripts": {
     "start": " node server.js"
-    
   },
   "dependencies": {
     "async": "~0.2.8",
@@ -24,6 +22,7 @@
     "node-yelp": "0.0.3",
     "passport": "^0.3.2",
     "path": "^0.12.7",
+    "pug": "^2.0.0-beta6",
     "socket.io": "~0.9.14"
   }
 }
