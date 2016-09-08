@@ -1,0 +1,90 @@
+@import url(//fonts.googleapis.com/css?family=Open+Sans);
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family: 'Open Sans',sans-serif;
+
+}
+
+#content{
+    position:relative;
+}
+
+#head {
+    border-bottom:2px solid #ccc;
+    margin:0 auto;
+}
+
+h1{
+    display: inline-block;
+}
+
+.btn{
+    
+    margin-top:35px;
+    
+}
+
+input{
+    display: inline-block;
+    width:300px;
+   
+    height:50px;
+     border:3px solid;
+      
+    
+}
+
+#search_group{
+     width: 50%;  
+  height: 50%;  
+  overflow: auto;  
+  margin: auto;  
+  position: absolute;  
+  top: 0; left: 0; bottom: 0; right: 0; 
+}
+
+#btn_search{
+    
+    
+    margin-top:0px;
+   
+}
+
+#btn_login{
+    float:right;
+    
+}
+
+#search {
+    height:450px;
+    width:1100px;
+    background-image:url('http://res.cloudinary.com/dnnqctgcb/image/upload/v1473033440/background_yc6wmv.jpg');
+    
+}
+
+
+img{
+    width:50px;
+    height:50px;
+}
+
+.item{
+    border:2px solid black;
+    margin-top:15px;
+}
+
+.left,.right{
+    float:left;
+}
+
+h4 {
+    display: inline-block;
+}
+.clear{
+    clear:both;
+}

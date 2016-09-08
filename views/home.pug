@@ -1,0 +1,73 @@
+extends layout
+block content
+
+    #content
+      #head
+        h1 Nightlife Cooradination
+        #btn_login.btn.btn-primary(type='button') Login with Twitter
+      #search
+        #search_group
+    
+            form(action='/search', method='POST')
+              input(type='hidden', name='_csrf', value=_csrf)
+              .form-group
+                
+                
+                  input.form-control(type='text', name='location', id='location', value='',placeholder='the city you want to go')
+              
+              .form-group
+                
+                  button.btn.btn-primary#btn_search(type='submit') Submit
+              h3= title
+    .well
+      #result
+        .list-group
+        
+         
+      
+      
+
+block script
+  script.
+    $(document).ready(function(){
+      var data ="#{infos}";
+    
+       
+      
+       var businesses = !{JSON.stringify(businesses)};
+       
+      
+       alert('businesses.length'+ businesses[0].id);
+       
+      businesses.forEach(function(item) {
+      
+          
+        
+          var img = '<img src="'+ item.image_url +'"/>'
+          var left = '<div class="left">' + img + '</div>'
+          
+          
+          var name = '<h4>' + item.name + '</h4>';
+          var btn = '<button type="button">Click Me!</button>'
+          var review = '<p>'+ item.snippet_text+'</p>'
+          var right = '<div class="right">' + name + btn + review + '</div>'
+          
+          var html = '<div class="item">'+left + right +'</div><div class="clear"></div>'
+          $('.list-group').append(html);
+        
+      });
+      
+      
+  
+      
+      
+     
+    });
+   
+              
+        
+           
+        
+        
+        
+        
